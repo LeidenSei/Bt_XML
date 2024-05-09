@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hiển thị tât cả -->
+<!-- <?xml-stylesheet href="CustomerShowAll.xslt" type="text/xsl"?> -->
+<!-- Xắp xếp từ z-a -->
+<!-- <?xml-stylesheet href="CustomerSortZ-A.xslt" type="text/xsl"?> -->
+<!-- hiển thị khách hàng Nha Trang -->
+<!-- <?xml-stylesheet href="CustomerShowNhaTrang.xslt" type="text/xsl"?> -->
+<!-- Highlight khác hàng họ nguyễn và tên nhỏ hơn 3 -->
+<?xml-stylesheet href="CustomerHighlightNguyen.xslt" type="text/xsl"?>
+<!-- Highlight khách hàng id lẻ -->
+<!-- <?xml-stylesheet href="CustomerHighlightGray.xslt" type="text/xsl"?> -->
+
+
+<Customers
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Customer.xsd">
+    <Customer>
+        <id>1</id>
+        <FirstName>Nguyễn Văn</FirstName>
+        <LastName>Tài</LastName>
+        <Address>30 Phạm Văn 
+            Đồng</Address>
+        <City type="thanhpho">Nha Trang</City>
+        <Email>tai@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9999</PostalCode>
+    </Customer>
+    <Customer>
+        <id>2</id>
+        <FirstName>Nguyễn Văn</FirstName>
+        <LastName>Bìn</LastName>
+        <Address> 1.HTM</Address>
+        <City type="thixa">Nha Trang</City>
+       
+        <Email>binh@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9002</PostalCode>
+    </Customer>
+
+    <Customer>
+        <id>3</id>
+        <FirstName>Trần Thị</FirstName>
+        <LastName>Tran</LastName>
+        <Address>4 Str. 30-4, Ward 1</Address>
+        <City type="tinh">Nha Trang</City>
+        
+        <Email>trang@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9342</PostalCode>
+    </Customer>
+    <Customer>
+        <id>4</id>
+        <FirstName>Hàng He</FirstName>
+        <LastName>Hếu</LastName>
+        <Address>No161, 5th Giang Cao</Address>
+        <City type="thanhpho">Hà Nội</City>
+        
+        <Email>heu@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9600</PostalCode>
+    </Customer>
+    <Customer>
+        <id>5</id>
+        <FirstName>Hoàng Thu</FirstName>
+        <LastName>Hằng</LastName>
+        <Address>1340F Street 3/2, Ward 2, District 11</Address>
+        <City type="thanhpho">Sài Gòn</City>
+        
+        <Email>hang@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9998</PostalCode>
+    </Customer>
+    <Customer>
+        <id>6</id>
+        <FirstName>Phùng Thanh</FirstName>
+        <LastName>Độ lươn</LastName>
+        <Address>Cao Bằng</Address>
+        <City type="thixa">Hà Nội</City>
+        
+        <Email>do@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9241</PostalCode>
+    </Customer>
+    <Customer>
+        <id>7</id>
+        <FirstName>Nguyên Anh</FirstName>
+        <LastName>Dũng</LastName>
+        <Address>dung@gmail.com</Address>
+        <City type="thanhpho">Hà Nội</City>
+        <Email>dung@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9655</PostalCode>
+    </Customer>
+    <Customer>
+        <id>8</id>
+        <FirstName>Ly Thi</FirstName>
+        <LastName>Như hoa</LastName>
+        <Address>BacGiang</Address>
+        <City type="thanhpho">Hà Nội</City>
+        <Email>hoa@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9300</PostalCode>
+    </Customer>
+    <Customer>
+        <id>9</id>
+        <FirstName>Hoang Van</FirstName>
+        <LastName>Taon</LastName>
+        <Address>Bac giang</Address>
+        <City type="thixa">Hà Nội</City>
+        <Email>toan@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9115</PostalCode>
+    </Customer>
+    <Customer>
+        <id>10</id>
+        <FirstName>Vu Thi Ngáo</FirstName>
+        <LastName>Ánh</LastName>
+        <Address>anh@gmail.com</Address>
+        <City type="thanhpho">Hà Nội</City>
+        <Email>anh@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9888</PostalCode>
+    </Customer>
+    <Customer>
+        <id>11</id>
+        <FirstName>Nguyễn Thi Ngáo</FirstName>
+        <LastName>Vin</LastName>
+        <Address>Bav Giang</Address>
+        <City type="thanhpho">Hà Nội</City>
+        <Email>anh@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9888</PostalCode>
+    </Customer>
+    <Customer>
+        <id>12</id>
+        <FirstName>Nguyễn Thu</FirstName>
+        <LastName>Phương</LastName>
+        <Address>Hương Vy</Address>
+        <City type="thanhpho">Nha Trang</City>
+        <Email>vin@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9888</PostalCode>
+    </Customer>
+    <Customer>
+        <id>13</id>
+        <FirstName>Nguyễn Thu</FirstName>
+        <LastName>Hằng</LastName>
+        <Address>Lang Giang</Address>
+        <City type="tinh">Nha Trang</City>
+        <Email>phion@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9008</PostalCode>
+    </Customer>
+    <Customer>
+        <id>14</id>
+        <FirstName>Haong Thu</FirstName>
+        <LastName>Hương</LastName>
+        <Address>Mỏ trạm</Address>
+        <City type="tinh">Hà Nội</City>
+        <Email>huong@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9008</PostalCode>
+    </Customer>
+    <Customer>
+        <id>15</id>
+        <FirstName>Vu Thị</FirstName>
+        <LastName>Hạnh</LastName>
+        <Address>Hương Vĩ</Address>
+        <City type="thanhpho">Hải Phòng</City>
+        <Email>hanh@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9118</PostalCode>
+    </Customer>
+    <Customer>
+        <id>16</id>
+        <FirstName>Hoàng tuán</FirstName>
+        <LastName>Anh</LastName>
+        <Address>Hương Vĩ</Address>
+        <City type="tinh">Nghệ An</City>
+        <Email>anh@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9228</PostalCode>
+    </Customer>
+    <Customer>
+        <id>17</id>
+        <FirstName>Nguyễn Đưc</FirstName>
+        <LastName>Trung</LastName>
+        <Address>Hương Vĩ</Address>
+        <City type="thanhpho">Nghệ An</City>
+        <Email>trung@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9128</PostalCode>
+    </Customer>
+    <Customer>
+        <id>18</id>
+        <FirstName>Nguyễn Đình </FirstName>
+        <LastName>Dương</LastName>
+        <Address>Hanoi</Address>
+        <City type="thanhpho">Hà Nội</City>
+        <Email>duong@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9028</PostalCode>
+    </Customer>
+    <Customer>
+        <id>19</id>
+        <FirstName>Nguyễn Đăng </FirstName>
+        <LastName>Đặt</LastName>
+        <Address>Hanoi</Address>
+        <City type="thanhpho">Hà Nội</City>
+        <Email>dat@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9099</PostalCode>
+    </Customer>
+    <Customer>
+        <id>20</id>
+        <FirstName>Nguyễn Hồng </FirstName>
+        <LastName>Quân</LastName>
+        <Address>Hanoi</Address>
+        <City type="thanhpho">Hà Nội</City>
+        <Email>quan@gmail.com</Email>
+        <StateProvinceCode>VN</StateProvinceCode>
+        <PostalCode>9118</PostalCode>
+    </Customer>
+</Customers>

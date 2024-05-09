@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Customers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Customer" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:integer" />
+                            <xs:element name="FirstName" type="NameReq" />
+                            <xs:element name="LastName" type="NameReq" />
+                            <xs:element name="Address" type="AddressReq" />
+                            <xs:element name="City" >
+                                <xs:complexType>
+                                   <xs:simpleContent>
+                                    <xs:extension base="CityReq">
+                                        <xs:attribute name="type" type="TypeReq" use="required"/>
+                                    </xs:extension>
+                                   
+                                  
+                                   </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Email" type="emailAddress" />
+                            <xs:element name="StateProvinceCode" type="StateProvinceCodeReq" />
+                            <xs:element name="PostalCode" type="PostalCodeReq" />
+                            
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <!-- id unique -->
+        <xs:unique name="CusIdUnique">
+            <xs:selector xpath="Customer" />
+            <xs:field xpath="id" />
+        </xs:unique>
+    </xs:element>
+    
+    <!-- <FirstName> và <LastName> tối thiểu 3 ký tự và tối đa 50 -->
+    <xs:simpleType name="NameReq">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!--<AddressLine1> không để trống và tối đa 128 ký tự  -->
+    <xs:simpleType name="AddressReq">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+            <xs:maxLength value="128"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- <City> là giá trị được chọn trong danh sách: Hà Nội, Sài Gòn, Hải Phòng, Nghệ An .. (1đ). -->
+    <xs:simpleType name="CityReq">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Hà Nội"/>
+            <xs:enumeration value="Sài Gòn"/>
+            <xs:enumeration value="Hải Phòng"/>
+            <xs:enumeration value="Nghệ An"/>
+            <xs:enumeration value="Nha Trang"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- <City> có thêm thuộc tính type là bắt buộc và chỉ được chọn trong các giá trị sau:
+         thanhpho, tinh, huyen, thixa (1đ). -->
+    <xs:simpleType name="TypeReq">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="thanhpho"/>
+            <xs:enumeration value="tinh"/>
+            <xs:enumeration value="huyen"/>
+            <xs:enumeration value="thixa"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- <StateProvinceCode> chỉ bao gồm 2 ký tự chữ cái (1đ) -->
+    <xs:simpleType name="StateProvinceCodeReq">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- <PostalCcode> chỉ gồm số từ 9000 đến 9999 -->
+    <xs:simpleType name="PostalCodeReq">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="9000"/>
+            <xs:maxInclusive value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Email đúng định dạng -->
+    <xs:simpleType name="emailAddress"> 
+        <xs:restriction base="xs:string"> 
+            <xs:pattern value="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})"/>
+        </xs:restriction> 
+    </xs:simpleType> 
+</xs:schema>
